@@ -196,14 +196,14 @@ header article p {
 
 .city-section article img {
   width: 42vw;
+  object-fit: cover;
 }
 
 .city-section article div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2.1875rem 6.2rem 0 4.3125rem;
-  padding: 0 6.2rem 0 4.3125rem;
+  padding: 1.5rem 4vw 1.5rem 6vw;
 }
 
 .city-section article:nth-of-type(1) div {
@@ -333,4 +333,58 @@ header article p {
   font-size: 1.0831rem;
   line-height: 28.6px;
   letter-spacing: 1.3px;
+}
+
+/* ! Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsla(208, 18%, 14%, 0.9);
+  padding-top: 4rem;
+  padding-bottom: 3.8rem;
+}
+
+.footer-social-media {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-social-media svg {
+  fill: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2.5rem;
+  transition: 0.5s;
+}
+
+.footer-social-media svg:hover {
+  fill: var(--color-white);
+}
+
+.footer-text {
+  display: flex;
+}
+
+.footer-text a,
+.footer-text p,
+.footer-text span {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 2.88px;
+}
+
+.footer-text span {
+  margin: 0 0.2rem;
+}
+
+.footer-text a {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+
+.footer-text a:hover {
+  color: var(--color-white);
+  border-bottom: 1px dotted var(--color-white);
 }
