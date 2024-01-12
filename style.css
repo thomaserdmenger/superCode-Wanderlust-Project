@@ -66,6 +66,7 @@ a {
   border-radius: 5px;
   letter-spacing: 3.12px;
   transition: 0.5s;
+  text-transform: uppercase;
 }
 
 .button-red:hover {
@@ -294,4 +295,42 @@ header article p {
 
 .grid-item:nth-of-type(6) {
   background-color: #3f4274;
+}
+
+/* ! Contact Section */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  background: url(./assets/images/background_footer.png) no-repeat center;
+  background-size: cover;
+  padding: 0 25vw;
+  padding-top: 6.5rem;
+}
+
+.contact-section article {
+  display: flex;
+  margin-bottom: 6.875rem;
+  gap: 3rem;
+}
+
+.contact-section article div:nth-of-type(2) {
+  display: flex;
+  align-items: flex-start;
+  width: 35%;
+  text-align: center;
+}
+
+.contact-information {
+  width: 65%;
+}
+
+.contact-information h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contact-information p {
+  font-size: 1.0831rem;
+  line-height: 28.6px;
+  letter-spacing: 1.3px;
 }
