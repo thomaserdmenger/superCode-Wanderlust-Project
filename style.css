@@ -39,6 +39,17 @@ h2 {
   font-size: 1.4625rem;
   letter-spacing: 5.26px;
   font-weight: 800;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.25rem;
+  font-size: clamp(0.6rem, 2vw, 1.25rem);
+  line-height: 34.9px;
+  letter-spacing: 4.49px;
+  margin-bottom: 1.5rem;
 }
 
 a {
@@ -120,7 +131,8 @@ header article p {
   padding: 6.5rem 15vw 0 15vw;
 }
 
-.quote-section h2 {
+.quote-section h2,
+.promise-header h2 {
   border-bottom: 2px solid hsla(0, 0%, 0%, 0.125);
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
@@ -217,4 +229,69 @@ header article p {
   font-size: 1.0831rem;
   letter-spacing: 1.3px;
   line-height: 28.6px;
+}
+
+/* ! Promise Section */
+
+.promise-section {
+  background-color: hsla(237, 30%, 45%, 1);
+  padding: 0 15vw 6.5rem 15vw;
+}
+
+.promise-section p {
+  color: hsla(236, 24%, 86%, 1);
+  line-height: 28.6px;
+  letter-spacing: 1.3px;
+}
+
+.promise-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.75rem 15vw 0 15vw;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+/* .promise-header h2 gestylt in Quote Section */
+
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-item {
+  padding-left: 7vw;
+  padding-right: 6.2vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.grid-item:nth-of-type(1) {
+  background-color: #4d508e;
+}
+
+.grid-item:nth-of-type(2) {
+  background-color: #4a4d89;
+}
+
+.grid-item:nth-of-type(3) {
+  background-color: #484a83;
+}
+
+.grid-item:nth-of-type(4) {
+  background-color: #45477e;
+}
+
+.grid-item:nth-of-type(5) {
+  background-color: #424479;
+}
+
+.grid-item:nth-of-type(6) {
+  background-color: #3f4274;
 }
