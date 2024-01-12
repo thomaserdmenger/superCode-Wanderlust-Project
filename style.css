@@ -557,3 +557,200 @@ footer {
     letter-spacing: 2.88px;
   }
 }
+
+/* # Mobile */
+
+@media only screen and (max-width: 576px) {
+  .button-red {
+    font-size: 0.8rem;
+    letter-spacing: 2.88px;
+  }
+
+  h2 {
+    font-size: 1rem;
+    letter-spacing: 3.63pxpx;
+  }
+
+  /* ! Header */
+
+  header {
+    padding: 7rem 10vw 0 10vw;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header article {
+    padding-bottom: 6.875rem;
+  }
+
+  header article h1 {
+    margin-bottom: 2.3125rem;
+    font-size: 1.1rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.2581rem;
+  }
+
+  header article p {
+    padding: 0;
+    font-size: 0.9169rem;
+    line-height: 24.2px;
+    letter-spacing: 3.3px;
+    margin-bottom: 1.8rem;
+  }
+
+  .break::after {
+    content: none;
+  }
+
+  /* ! Quote Section */
+  .quote-section {
+    padding: 2.75rem 4vw 0 4vw;
+  }
+
+  .quote-section h2,
+  .promise-header h2 {
+    font-size: 1rem;
+    line-height: 26.6px;
+    letter-spacing: 3.63px;
+  }
+
+  .quote-section p {
+    font-size: 0.9rem;
+    line-height: 24.2px;
+    letter-spacing: 0.55px;
+    margin-bottom: 2.5rem;
+  }
+
+  .quote-icons-container {
+    margin-bottom: 3rem;
+    gap: 1rem;
+  }
+
+  .quote-icon {
+    padding: 0.5rem;
+  }
+
+  .quote-icon img {
+    width: 22px;
+  }
+
+  /* ! City Section */
+
+  .city-section article div {
+    padding: 3rem 10vw;
+  }
+
+  .city-section article:nth-of-type(3) div h2 {
+    margin-top: 0;
+  }
+
+  .city-section article:nth-of-type(3) div p {
+    margin-bottom: 0;
+  }
+
+  .city-section article div p {
+    font-size: 0.9rem;
+    letter-spacing: 0.55px;
+    line-height: 24.2px;
+  }
+
+  /* ! Promise Section */
+
+  .promise-section {
+    padding: 0 8vw 3rem 8vw;
+  }
+
+  .promise-section p {
+    line-height: 24.2px;
+    letter-spacing: 0.55px;
+    font-size: 0.9rem;
+  }
+
+  .promise-header {
+    padding: 2.75rem 0 0 0;
+    margin-bottom: 1.875rem;
+  }
+
+  /* .promise-header h2 gestylt in Quote Section */
+
+  .promise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item h3 {
+    font-size: 0.9rem;
+    line-height: 34.9px;
+    letter-spacing: 4.49px;
+    margin-bottom: 1rem;
+  }
+
+  .grid-item {
+    padding: 3vw 4vw;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.125);
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .grid-item:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .grid-item:nth-of-type(1),
+  .grid-item:nth-of-type(2),
+  .grid-item:nth-of-type(3),
+  .grid-item:nth-of-type(4),
+  .grid-item:nth-of-type(5),
+  .grid-item:nth-of-type(6) {
+    background-color: hsla(237, 30%, 45%, 1);
+  }
+
+  /* ! Contact Section */
+
+  .contact-section {
+    padding: 0 5vw;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .contact-information p {
+    font-size: 0.9rem;
+    line-height: 24.2px;
+    letter-spacing: 0.55px;
+    padding: 0 4vw;
+  }
+
+  /* ! Footer */
+
+  footer {
+    padding-top: 2.75rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .footer-social-media {
+    gap: 1.5rem;
+  }
+
+  .footer-social-media svg {
+    margin-bottom: 2.25rem;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .footer-text a,
+  .footer-text p,
+  .footer-text span {
+    font-size: 0.75rem;
+    letter-spacing: 2.64px;
+    line-height: 1.8rem;
+  }
+
+  .footer-text span {
+    display: none;
+  }
+}
