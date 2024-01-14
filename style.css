@@ -24,6 +24,7 @@ img {
   min-height: 100vh;
   font-family: OpenSans, sans-serif;
   color: var(--color-white);
+  position: relative;
 }
 
 h1 {
@@ -71,6 +72,10 @@ a {
 
 .button-red:hover {
   background-color: hsla(7, 84%, 65%, 1);
+}
+
+.burger-menu {
+  display: none;
 }
 
 /* ! Header */
@@ -574,11 +579,27 @@ footer {
   /* ! Header */
 
   header {
-    padding: 7rem 10vw 0 10vw;
+    padding: 3rem 10vw 0 10vw;
   }
 
-  header nav {
+  header nav a {
     display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+  }
+
+  .burger-menu div {
+    background-color: var(--color-white);
+    width: 20px;
+    height: 4px;
+    border-radius: 5px;
   }
 
   header article {
